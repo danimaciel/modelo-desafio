@@ -8,6 +8,19 @@ O serviço gratuito pode suspender apps inativos. O protótipo não oferece SLA.
 
 ## Tratamento dos arquivos
 
+### Configuração administrativa da análise
+
+Os critérios não aparecem como controles para o usuário. A pessoa responsável pela hospedagem pode definir `MIN_SIMILARITY` (padrão `0.35`, entre 0 e 1) e `MIN_MARGIN` (padrão `0.03`, entre 0 e 0.5) nas variáveis de ambiente. No Streamlit Community Cloud, podem ser definidos como chaves de primeiro nível em **Settings → Secrets**, que são expostas como variáveis de ambiente. Reinicie o aplicativo após a alteração. Esses valores continuam experimentais e precisam de calibração. Os critérios usados ficam registrados no relatório JSON. Não versione o arquivo `secrets.toml`.
+
+```toml
+MIN_SIMILARITY = "0.35"
+MIN_MARGIN = "0.03"
+```
+
+O identificador técnico da base permanece nos relatórios para rastreabilidade, sem aparecer na barra lateral. Metas encerradas e ODS não informado são apresentados nos resultados em que se aplicam.
+
+### Sessão e processamento
+
 Uploads, texto extraído, embeddings das entradas e resultados são processados em memória. A aplicação não salva uploads em disco nem os envia ao GitHub ou a APIs generativas. Apenas o modelo e o catálogo usam cache compartilhado. Resultados ficam no estado da sessão para permitir downloads, até a limpeza ou encerramento da sessão; a plataforma controla a liberação final de memória. O botão “Limpar sessão” remove o estado da aplicação e os widgets.
 
 Arquivos atravessam e são processados no servidor de hospedagem. Não prometer execução somente no navegador, exclusão instantânea de toda infraestrutura ou ausência de logs da plataforma. Não colocar dados pessoais, confidenciais ou não autorizados na demonstração. Os relatórios JSON contêm trechos do documento e devem receber o mesmo tratamento do original.

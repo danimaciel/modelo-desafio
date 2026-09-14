@@ -52,7 +52,8 @@ with patch('streamlit.file_uploader', return_value=upload):
     assert 'Sem texto' in output['Publicacoes']['E3'].value
     assert output['Publicacoes']['D2'].value == '=1+2'
     assert output['Preservada']['A1'].value == 'original'
-    app.slider[0].set_value(0.5).run()
+    with patch.dict(os.environ, {'MIN_SIMILARITY': '0.5'}):
+        app.run()
     assert not app.success, 'Stale results were shown after a parameter change'
 print('UI XLSX: selecao, duas linhas, copia, formulas, outras abas e invalidacao OK')
 

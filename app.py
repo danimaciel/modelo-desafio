@@ -1,6 +1,7 @@
 """Interface do protótipo; uploads e resultados permanecem na sessão em memória."""
 import hashlib
 import json
+import os
 from pathlib import Path
 
 import streamlit as st
@@ -50,17 +51,19 @@ def main():
     st.caption('Protótipo de pesquisa • Aderência temática sugerida; não comprova contribuição ou impacto.')
     st.info('Ambiente externo de demonstração: envie apenas documentos públicos ou exemplos sem informações internas.')
     catalog, version = load_catalog()
+    cutoff = float(os.getenv('MIN_SIMILARITY', '0.35'))
+    margin = float(os.getenv('MIN_MARGIN', '0.03'))
+    if not 0 <= cutoff <= 1 or not 0 <= margin <= 0.5:
+        raise ValueError('Configuração de análise inválida. Contate a pessoa responsável pelo aplicativo.')
     with st.sidebar:
         st.subheader('Sobre a análise')
-        st.write(f'{len(catalog)} desafios na base fornecida.')
-        st.caption(f'Base: {version[:12]}')
-        st.write('As relações com portfólios, objetivos, metas e ODS são reproduzidas da base.')
-        st.caption('Há metas encerradas e um ODS não informado. Essas situações são preservadas.')
-        with st.expander('Critérios experimentais'):
-            st.caption('Valores iniciais sem calibração. Similaridade não é percentual de certeza.')
-            cutoff = st.slider('Similaridade mínima', 0.0, 1.0, 0.35, 0.01)
-            margin = st.slider('Diferença mínima entre os dois primeiros', 0.0, 0.5, 0.03, 0.01)
-        st.caption('Limites: 20 MB; 150 páginas; até 2.000 linhas analisadas por vez.')
+        st.write(f'Seu texto será comparado com {len(catalog)} desafios para inovação da Embrapa.')
+        st.write('Cada indicação inclui os vínculos com portfólio, objetivo, meta e ODS registrados na base de referência.')
+        st.caption('Revise as sugestões antes de utilizá-las.')
+        st.divider()
+        st.subheader('Arquivos aceitos')
+        st.caption('PDF ou XLSX · até 20 MB por arquivo')
+        st.caption('PDF: até 150 páginas\n\nTabelas: até 2.000 linhas por análise')
         if st.button('Limpar sessão'):
             st.session_state.clear()
             st.rerun()
