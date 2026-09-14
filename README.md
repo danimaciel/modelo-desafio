@@ -1,14 +1,20 @@
 # Modelo Desafio
 
-Protótipo de aplicação web baseada em SBERT para sugerir a aderência temática de projetos, publicações, tecnologias, compromissos e soluções aos desafios para inovação da Embrapa. Proposta de pesquisa, sem caráter de enquadramento institucional oficial.
+Estou desenvolvendo esta aplicação para facilitar a identificação dos desafios para inovação da Embrapa mais relacionados a um projeto, publicação, tecnologia, compromisso ou solução. A ideia é enviar um arquivo e receber sugestões de desafios, acompanhadas de suas relações com portfólios, objetivos estratégicos, metas e ODS.
 
-## Funcionalidades
+O projeto usa SBERT para comparar o significado dos textos. Nesta primeira versão, a interface foi construída com Streamlit. O código e a documentação ficam neste repositório para permitir ajustes, avaliação e uma futura hospedagem na infraestrutura da Embrapa.
 
-- **XLSX:** escolha de aba, linha do cabeçalho e uma ou mais colunas de texto; uma indicação por linha, em uma nova coluna, com portfólio, objetivo, meta e ODS. Cópia para download e relatório JSON com evidências.
-- **PDF de projeto:** extração por página, comparação de trechos e até três desafios acima do critério configurado, com páginas e evidências. Relatório JSON para download.
-- **PDF com tabelas:** extração por bordas ou posição do texto, prévia e confirmação das colunas. Uma tabela por análise, exportada em XLSX.
-- Textos vazios não são classificados; pontuações baixas, textos curtos e candidatos próximos exigem revisão.
-- Relações institucionais são recuperadas por identificador, sem geração ou inferência de novos vínculos.
+Esta é uma proposta em desenvolvimento. As indicações ajudam na análise, mas precisam de revisão e não representam um enquadramento institucional oficial.
+
+## Como funciona
+
+- **Planilhas XLSX:** você escolhe a aba, a linha do cabeçalho e as colunas que contêm o texto. O sistema analisa cada linha e acrescenta uma coluna com o desafio sugerido e seus vínculos. Depois, você baixa a cópia da planilha com os resultados.
+- **Projetos em PDF:** o sistema lê o texto e apresenta até três desafios relacionados, com os trechos e as páginas que apoiam cada indicação.
+- **Tabelas em PDF:** você confere a tabela extraída e escolhe as colunas de texto. O resultado é disponibilizado em XLSX, uma tabela por vez.
+
+Também é possível baixar um relatório JSON com os detalhes da análise. Linhas sem texto ficam sem classificação. Textos curtos, baixa similaridade ou resultados muito próximos recebem um aviso de revisão.
+
+As relações com portfólios, objetivos, metas e ODS vêm da base de referência. O modelo sugere o desafio; os vínculos são os que já estão registrados para ele.
 
 ## Executar localmente
 
@@ -33,15 +39,17 @@ O navegador abrirá a interface local. As dependências fixam PyTorch CPU para W
 4. Aguarde instalação e inicialização. A primeira análise baixa o modelo.
 5. Teste com documentos públicos. Configure compartilhamento restrito aos participantes quando essa opção estiver disponível na conta.
 
-Não há login institucional implementado neste protótipo. Publicar o app não cria restrição a funcionários da Embrapa. A camada de acesso é da plataforma, até a migração institucional. Não versionar segredos ou uploads.
+Por enquanto, o acesso é controlado pelo Streamlit; o aplicativo ainda não tem login institucional. Para esta etapa de demonstração, use documentos públicos ou exemplos sem informações internas. Os arquivos enviados pelos usuários não são adicionados ao GitHub. Senhas e outras credenciais também ficam fora do repositório.
 
-As instruções acima estão preparadas para implantação; criar o repositório não publica automaticamente o aplicativo. Consulte [implantação e migração](docs/implantacao.md).
+O código já está no GitHub. A publicação do aplicativo no Streamlit é uma etapa separada. Os detalhes estão no [guia de implantação e migração](docs/implantacao.md).
 
 ## Base e metodologia
 
-`data/desafios.json` contém 107 desafios da planilha fornecida pela responsável pela proposta. São 9 portfólios, 7 objetivos, 25 textos distintos de metas; 44 registros mencionam meta encerrada e um não informa ODS. Não houve atualização externa ou correção dos vínculos. `data/proveniencia.json` registra a origem e o hash do arquivo fonte.
+Para esta primeira versão, usei uma planilha com 107 desafios, associados a 9 portfólios, 7 objetivos e 25 textos distintos de metas. Em 44 registros, a meta está marcada como encerrada; um registro não informa ODS. Mantive essas informações como estavam na planilha.
 
-Modelo: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (Apache 2.0). O catálogo é indexado por descrição do desafio; textos extensos são divididos por tokens. A similaridade usa cosseno de vetores normalizados; o ranking agrega os três trechos mais aderentes. Leia [metodologia e validação](docs/metodologia.md) antes de interpretar os resultados.
+A base está em `data/desafios.json`. O arquivo `data/proveniencia.json` registra sua origem e uma identificação digital do arquivo original, que permite conferir qual versão foi utilizada.
+
+O modelo utilizado é o `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, com licença Apache 2.0. Ele compara os textos enviados com a descrição de cada desafio. Textos longos são divididos em trechos, e a classificação considera os até três trechos mais semelhantes a cada desafio. A [documentação da metodologia](docs/metodologia.md) explica o cálculo e a avaliação prevista.
 
 **Os critérios iniciais 0,35 (similaridade) e 0,03 (diferença entre primeiros candidatos) são experimentais, não calibrados.** A pontuação não é probabilidade de acerto. Não há treinamento com exemplos da Embrapa nesta versão.
 
@@ -49,7 +57,7 @@ Modelo: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` (Apache 2.
 
 - Sem OCR: PDFs digitalizados devem ser reconhecidos externamente e reenviados. Páginas sem texto são sinalizadas; a análise pode ser parcial.
 - Tabelas complexas, células mescladas e continuação entre páginas exigem conferência; o protótipo não une tabelas automaticamente.
-- XLSX: fórmulas selecionadas precisam de valores calculados salvos pelo Excel. A biblioteca não recalcula fórmulas. Formatação comum, fórmulas e outras abas são preservadas em testes; objetos avançados podem ser alterados pelo leitor/escritor. Não promete preservação binária perfeita.
+- XLSX: se as colunas escolhidas contêm fórmulas, recalcule e salve o arquivo no Excel antes de enviá-lo. O aplicativo usa os resultados salvos. Nos testes, a formatação comum, as fórmulas e as outras abas foram preservadas; recursos avançados do Excel ainda precisam de conferência na cópia gerada.
 - Uma aba ou tabela por execução. Limites: 20 MB, 150 páginas, 2.000 linhas analisadas, 100 colunas de entrada (99 para acrescentar resultado), 100 MB descompactados e 2.000 trechos por item/projeto. Divida arquivos maiores.
 - A similaridade temática não comprova contribuição, entrega, impacto nem associação oficial. Textos curtos, siglas, negações e descrições genéricas podem produzir indicações incorretas.
 - Sem garantia de disponibilidade ou capacidade para muitos acessos simultâneos no serviço gratuito.
@@ -83,9 +91,9 @@ pip install -r requirements-dev.txt
 python scripts/smoke_test.py
 ```
 
-O teste cobre autoconsultas ao catálogo, upload simulado na interface, XLSX com fórmulas e outra aba, linhas vazias, invalidação de resultados quando critérios mudam, PDF de projeto, tabela em PDF e rejeição de PDF sem texto. Não substitui teste de acurácia com exemplos independentes ou teste de carga.
+Esse teste percorre os principais caminhos da aplicação: planilhas, projetos e tabelas em PDF. Também confere fórmulas, linhas vazias e atualização dos resultados quando os critérios mudam. Ele verifica o funcionamento; a qualidade das sugestões e o desempenho com muitos usuários precisam de avaliações próprias.
 
-Os testes unitários verificam funcionamento, não acurácia do SBERT. O avaliador exige exemplos rotulados por especialistas; não publique documentos internos no repositório. Ao atualizar o catálogo, revise também as contagens de referência nos testes e na documentação, e reinicie o app.
+Para avaliar a qualidade das indicações, o próximo passo é reunir exemplos com desafios definidos por especialistas. Esses documentos podem ficar fora do repositório, especialmente quando forem internos. Ao atualizar a base, ajuste também as contagens nos testes e na documentação e reinicie o aplicativo.
 
 ## Referências técnicas
 

@@ -2,9 +2,13 @@
 
 ## Demonstração no Streamlit
 
-Usar `app.py`, branch `main`, Python 3.12. O catálogo acompanha o repositório; os pesos são baixados do Hugging Face Hub na primeira análise, sem API de inferência paga. A conectividade com o Hub é necessária para a primeira carga. Dependências e pesos ocupam memória e disco; limites do Community Cloud podem provocar reinício. Medir tempo e consumo com arquivos representativos antes de ampliar o grupo de usuários.
+Minha proposta é começar pelo Streamlit Community Cloud e, quando houver estrutura disponível, levar a aplicação para um servidor da Embrapa. O mesmo código pode ser usado nos dois ambientes.
 
-O serviço gratuito pode suspender apps inativos. O protótipo não oferece SLA. Escolher compartilhamento restrito nas configurações da plataforma; a interface não inclui autenticação própria. Não confundir repositório público com autorização para publicar documentos internos.
+Para publicar no Streamlit, selecione o repositório `danimaciel/modelo-desafio`, a branch `main`, o arquivo `app.py` e Python 3.12. A base de desafios já está no repositório. Na primeira análise, o aplicativo baixa o modelo do Hugging Face e passa a executá-lo no próprio servidor, sem contratar uma API de inferência.
+
+A primeira carga precisa de conexão com o Hugging Face. Como o modelo ocupa memória e disco, vamos avaliar o tempo de resposta e o consumo com arquivos representativos antes de ampliar o grupo de usuários.
+
+O serviço gratuito pode suspender aplicativos inativos e não garante disponibilidade contínua. Configure o compartilhamento para o grupo de participantes nas opções da plataforma. O aplicativo ainda não possui login próprio; nesta demonstração, serão usados documentos públicos ou exemplos sem conteúdo interno.
 
 ## Tratamento dos arquivos
 
@@ -23,7 +27,7 @@ O identificador técnico da base permanece nos relatórios para rastreabilidade,
 
 Uploads, texto extraído, embeddings das entradas e resultados são processados em memória. A aplicação não salva uploads em disco nem os envia ao GitHub ou a APIs generativas. Apenas o modelo e o catálogo usam cache compartilhado. Resultados ficam no estado da sessão para permitir downloads, até a limpeza ou encerramento da sessão; a plataforma controla a liberação final de memória. O botão “Limpar sessão” remove o estado da aplicação e os widgets.
 
-Arquivos atravessam e são processados no servidor de hospedagem. Não prometer execução somente no navegador, exclusão instantânea de toda infraestrutura ou ausência de logs da plataforma. Não colocar dados pessoais, confidenciais ou não autorizados na demonstração. Os relatórios JSON contêm trechos do documento e devem receber o mesmo tratamento do original.
+Os arquivos são processados no servidor de hospedagem, e não apenas no navegador de quem os envia. O aplicativo não controla os registros e os prazos de liberação de memória da plataforma. Por isso, esta demonstração deve receber apenas arquivos públicos ou exemplos sem dados pessoais ou confidenciais. O relatório JSON inclui trechos do documento e precisa do mesmo cuidado que o arquivo original.
 
 ## Servidor próprio
 
@@ -32,11 +36,13 @@ docker build -t modelo-desafio .
 docker run --rm -p 8501:8501 modelo-desafio
 ```
 
-Começar a avaliação de capacidade com 2 vCPUs e 4 GB de RAM como estimativa, não mínimo validado. O Dockerfile usa CPU. Colocar HTTPS e autenticação institucional no proxy de entrada. Validar a integração com o provedor institucional; ela não está implementada. Restringir acesso direto à porta 8501 e configurar limites de tráfego, logs sem conteúdo de documentos, atualização de dependências e monitoramento conforme a infraestrutura disponível.
+Para os primeiros testes de capacidade, a estimativa é usar 2 vCPUs e 4 GB de RAM. Essa configuração ainda precisa ser avaliada com o volume real de uso. O Dockerfile prepara a execução em CPU.
 
-Em ambiente sem internet, preparar previamente os pesos da revisão validada no cache Hugging Face e disponibilizá-los ao usuário do contêiner; configurar `HF_HUB_OFFLINE=1`, `HF_HOME` e `MODEL_REVISION`. Testar a carga offline antes da implantação. As dependências Python também precisam estar disponíveis na imagem já construída.
+Na migração, a equipe de infraestrutura precisará configurar HTTPS e login institucional na entrada do serviço. Essa integração ainda não faz parte do aplicativo. Também será necessário restringir o acesso direto à porta 8501 e definir monitoramento, atualização de dependências e registros técnicos que não incluam o conteúdo dos documentos.
 
-O módulo `desafios/semantic.py` não depende de Streamlit, permitindo futura API. A interface atual pode continuar sendo usada sem reescrever o mecanismo semântico. Para concorrência elevada, avaliar fila de trabalhos e processamento separado; nesta versão o acesso ao encoder é protegido por lock e não há fila distribuída.
+Se o servidor não tiver acesso à internet, baixe previamente a versão validada do modelo e disponibilize seus arquivos no cache do Hugging Face usado pelo contêiner. Configure `HF_HUB_OFFLINE=1`, `HF_HOME` e `MODEL_REVISION` e teste a inicialização sem internet. As dependências Python também devem estar instaladas na imagem Docker.
+
+O módulo `desafios/semantic.py` funciona independentemente do Streamlit. Isso permite manter a interface atual ou, no futuro, criar outra forma de acesso ao modelo. Se houver muitos usuários simultâneos, será preciso avaliar uma fila de processamento. Nesta versão, o aplicativo controla o acesso ao modelo para evitar execuções simultâneas do encoder, mas ainda não distribui trabalhos entre servidores.
 
 ## O que validar antes do uso institucional
 
