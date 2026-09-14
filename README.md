@@ -1,5 +1,14 @@
 # Modelo Desafio
 
+### Formatos de planilha
+
+Além de XLSX, são aceitos **XLS e CSV**, com a mesma seleção de aba, cabeçalho e colunas de texto.
+
+- **XLS:** o resultado é entregue em XLSX. A conversão mantém os valores e as abas, mas substitui fórmulas pelos resultados salvos e não preserva formatação, gráficos ou macros.
+- **CSV:** o separador e a codificação são selecionados na interface. Há suporte a ponto e vírgula, vírgula, tabulação e barra vertical; as codificações disponíveis são UTF-8, Windows-1252 e UTF-16. A prévia permite conferir a leitura. O resultado pode ser baixado em CSV (UTF-8 com BOM, usando o separador escolhido) ou XLSX. Textos que possam ser interpretados como fórmulas recebem um apóstrofo de proteção na saída CSV.
+
+Os limites de tamanho e quantidade de linhas também se aplicam a esses formatos.
+
 Aplicação para facilitar a identificação dos desafios para inovação da Embrapa mais relacionados a um projeto, publicação, tecnologia, compromisso ou solução. A ideia é que o usuário envie um arquivo e receba sugestões de desafios, acompanhadas de suas relações com portfólios, objetivos estratégicos, metas e ODS.
 
 O projeto usa o modelo SBERT para comparar o significado semântico dos textos. Nesta primeira versão, a interface foi construída com Streamlit. O código e a documentação ficam neste repositório para permitir ajustes, avaliação e uma futura hospedagem na infraestrutura da Embrapa.

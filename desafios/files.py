@@ -1,5 +1,6 @@
 from copy import copy
-from io import BytesIO
+from io import BytesIO, StringIO
+import csv
 from zipfile import ZipFile, BadZipFile
 import unicodedata
 
@@ -10,6 +11,77 @@ MAX_BYTES = 20 * 1024 * 1024
 MAX_ROWS = 2000
 MAX_COLUMNS = 100
 MAX_PAGES = 150
+
+
+def prepare_table(raw, extension, delimiter=';', encoding='utf-8-sig'):
+    """Converte XLS/CSV em uma representação XLSX para o fluxo de análise."""
+    validate_bytes(raw)
+    if extension == '.xlsx':
+        return raw
+    workbook = openpyxl.Workbook()
+    if extension == '.csv':
+        try:
+            text = raw.decode(encoding)
+        except UnicodeError as exc:
+            raise ValueError('Não foi possível ler os caracteres. Selecione outra codificação do CSV.') from exc
+        sheet = workbook.active
+        sheet.title = 'Dados'
+        try:
+            for number, row in enumerate(csv.reader(StringIO(text, newline=''), delimiter=delimiter, strict=True), 1):
+                if number > MAX_ROWS + 100 or len(row) > MAX_COLUMNS:
+                    raise ValueError('CSV excede 2.100 linhas ou 100 colunas.')
+                if any(len(value) > 32767 for value in row):
+                    raise ValueError('Uma célula excede 32.767 caracteres. Divida seu conteúdo antes de analisar.')
+                sheet.append(row)
+                for cell in sheet[number]:
+                    cell.data_type = 's'
+        except csv.Error as exc:
+            raise ValueError('CSV inválido. Confira o separador e as aspas do arquivo.') from exc
+    elif extension == '.xls':
+        import xlrd
+        try:
+            source = xlrd.open_workbook(file_contents=raw, on_demand=True)
+        except xlrd.XLRDError as exc:
+            raise ValueError('XLS inválido ou protegido. Salve uma cópia sem senha no Excel.') from exc
+        try:
+            workbook.remove(workbook.active)
+            for original in source.sheets():
+                if original.nrows > MAX_ROWS + 100 or original.ncols > MAX_COLUMNS:
+                    raise ValueError('XLS excede 2.100 linhas ou 100 colunas por aba.')
+                sheet = workbook.create_sheet(original.name)
+                for row in original.get_rows():
+                    values = []
+                    for cell in row:
+                        value = cell.value
+                        if cell.ctype == xlrd.XL_CELL_DATE:
+                            value = xlrd.xldate_as_datetime(value, source.datemode)
+                        elif cell.ctype == xlrd.XL_CELL_BOOLEAN:
+                            value = bool(value)
+                        elif cell.ctype == xlrd.XL_CELL_ERROR:
+                            value = xlrd.error_text_from_code.get(value, '#ERRO')
+                        values.append(value)
+                    sheet.append(values)
+                    for cell in sheet[sheet.max_row]:
+                        if isinstance(cell.value, str):
+                            cell.data_type = 's'
+        finally:
+            source.release_resources()
+    else:
+        raise ValueError('Formato não suportado. Use XLSX, XLS ou CSV.')
+    output = BytesIO()
+    workbook.save(output)
+    return output.getvalue()
+
+
+def export_csv(raw_xlsx, sheet_name, delimiter):
+    sheet = load_xlsx(raw_xlsx)[sheet_name]
+    output = StringIO(newline='')
+    writer = csv.writer(output, delimiter=delimiter)
+    for row in sheet.iter_rows(values_only=True):
+        # Evita execução de fórmulas ao abrir texto importado no Excel.
+        writer.writerow(["'" + v if isinstance(v, str) and v.lstrip().startswith(('=', '+', '-', '@'))
+                         else ('' if v is None else v) for v in row])
+    return output.getvalue().encode('utf-8-sig')
 
 
 def validate_bytes(raw):

@@ -8,7 +8,7 @@ import streamlit as st
 
 from desafios.catalog import load_catalog, describe
 from desafios.files import (load_xlsx, headers, suggested_columns, row_text,
-                            export_xlsx, read_pdf, export_pdf_table, MAX_ROWS)
+                            export_xlsx, read_pdf, export_pdf_table, MAX_ROWS, prepare_table, export_csv)
 from desafios.semantic import SemanticEngine
 
 st.set_page_config(page_title='Desafios para inovação', page_icon='🌱', layout='wide')
@@ -36,6 +36,9 @@ def analyze_rows(items, cutoff, margin):
 
 
 def show_downloads(result, filename):
+    if result.get('csv'):
+        st.download_button('Baixar CSV com indicações', result['csv'],
+                           file_name=f'{Path(filename).stem}_analisado.csv', mime='text/csv')
     if result.get('xlsx'):
         st.download_button('Baixar planilha com indicações', result['xlsx'],
                            file_name=f'{Path(filename).stem}_analisado.xlsx',
@@ -62,19 +65,19 @@ def main():
         st.caption('Revise as sugestões antes de utilizá-las.')
         st.divider()
         st.subheader('Arquivos aceitos')
-        st.caption('PDF ou XLSX · até 20 MB por arquivo')
+        st.caption('PDF, XLSX, XLS ou CSV · até 20 MB por arquivo')
         st.caption('PDF: até 150 páginas\n\nTabelas: até 2.000 linhas por análise')
         if st.button('Limpar sessão'):
             st.session_state.clear()
             st.rerun()
     mode = st.radio('O que deseja analisar?', ['Tabela por linha', 'Projeto em PDF'], horizontal=True)
-    upload = st.file_uploader('Selecione o arquivo', type=['xlsx', 'pdf'] if mode == 'Tabela por linha' else ['pdf'])
+    upload = st.file_uploader('Selecione o arquivo', type=['xlsx', 'xls', 'csv', 'pdf'] if mode == 'Tabela por linha' else ['pdf'])
     if upload is None:
         st.write('Para tabelas, você escolherá a aba, o cabeçalho e uma ou mais colunas de texto.')
         st.write('Para projetos, receberá até três desafios com trechos e páginas que apoiam a indicação.')
         return
     raw = upload.getvalue()
-    identity = hashlib.sha256(raw).hexdigest() + mode
+    identity = hashlib.sha256(raw).hexdigest() + mode + Path(upload.name).suffix.lower()
     if st.session_state.get('file_identity') != identity:
         st.session_state['file_identity'] = identity
         st.session_state.pop('result', None)
@@ -114,9 +117,21 @@ def main():
             show_downloads(result, upload.name)
         return
 
-    if upload.name.lower().endswith('.xlsx'):
-        values = load_xlsx(raw, data_only=True)
-        formulas = load_xlsx(raw)
+    extension = Path(upload.name).suffix.lower()
+    if extension in ('.xlsx', '.xls', '.csv'):
+        delimiter, encoding = ';', 'utf-8-sig'
+        if extension == '.csv':
+            delimiter = st.selectbox('Separador do CSV', [';', ',', '\t', '|'],
+                                     format_func=lambda v: {';': 'Ponto e vírgula (;)', ',': 'Vírgula (,)', '\t': 'Tabulação', '|': 'Barra vertical (|)'}[v])
+            encoding = st.selectbox('Codificação do CSV', ['utf-8-sig', 'cp1252', 'utf-16'],
+                                    format_func=lambda v: {'utf-8-sig': 'UTF-8', 'cp1252': 'Windows-1252 (Excel antigo)', 'utf-16': 'UTF-16'}[v])
+            st.caption('Confira as colunas na prévia. O CSV de saída usa UTF-8 e o separador escolhido. Textos que possam ser interpretados como fórmulas recebem um apóstrofo de proteção.')
+        elif extension == '.xls':
+            st.info('O XLS será convertido para XLSX. Valores e abas serão mantidos; fórmulas serão substituídas pelos resultados salvos. Formatação, gráficos e macros não serão mantidos.')
+        table_raw = prepare_table(raw, extension, delimiter, encoding)
+        selection += [delimiter, encoding]
+        values = load_xlsx(table_raw, data_only=True)
+        formulas = load_xlsx(table_raw)
         sheet_name = st.selectbox('Aba a analisar', values.sheetnames)
         sheet = values[sheet_name]
         header = int(st.number_input('Linha do cabeçalho', min_value=1, max_value=max(1, sheet.max_row), value=1))
@@ -143,8 +158,9 @@ def main():
                 raise ValueError('Selecione um arquivo com até 2.000 linhas de dados.')
             with st.spinner('Preparando análise…'):
                 mapped, detail = analyze_rows(items, cutoff, margin)
-                output = export_xlsx(raw, sheet_name, header, mapped)
+                output = export_xlsx(table_raw, sheet_name, header, mapped)
             st.session_state['result'] = {'key': selection, 'xlsx': output,
+                'csv': export_csv(output, sheet_name, delimiter) if extension == '.csv' else None,
                 'details': {'aba': sheet_name, 'colunas': [labels[c] for c in columns],
                             'similaridade_minima': cutoff, 'margem_minima': margin, 'resultados': detail}}
     else:
