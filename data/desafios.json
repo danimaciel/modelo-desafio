@@ -1,0 +1,858 @@
+[
+  {
+    "id_desafio": "D001",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Agregar valor aos produtos e serviços dos sistemas produtivos sustentáveis, sistemas agrícolas tradicionais, ecossistemas naturais e regiões ecotonais que promovam a capacidade adaptativa, o controle de emissões de GEE e/ou amplie os serviços ecossistêmicos",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.3. Até 2025, disponibilizar 5 sistemas de manejo desenvolvidos pela Embrapa e parceiros para o manejo sustentável de florestas naturais adaptados às diferentes regiões brasileiras. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D002",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Agregar valor às matérias primas alimentares e não-alimentares nas cadeias produtivas de interesse com vistas à segurança do consumidor e a soberania alimentar",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D003",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Ampliar a agregação de valor aos produtos da biodiversidade e dos serviços ambientais nas unidades de base familiar e territórios de povos e comunidades tradicionais",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.3. Até 2027, aumentar em 30% o número de tecnologias disponíveis que contribuam para a inclusão socioprodutiva, para a transição agroecológica e para o desenvolvimento territorial. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "11. Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis"
+  },
+  {
+    "id_desafio": "D004",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Ampliar a base de conhecimentos e a inserção de bioativos dos biomas para promoção da bioeconomia, com foco nos setores agroquímico, cosmético, alimentar e farmacêutico",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.3. Até 2027, disponibilizar 15 ativos e tecnologias sociais relacionados à bioeconomia, em todos os biomas. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "11. Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis"
+  },
+  {
+    "id_desafio": "D005",
+    "portfolio": "Economia Verde",
+    "desafio": "Ampliar a eficiência energética e produção de bioenergia a partir de biomassa cultivada e/ou proveniente de resíduos",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.2. Até 2030, disponibilizar 5 novas matérias-primas renováveis para uso no contexto da bioeconomia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "7. Garantir acesso à energia barata, confiável, sustentável e renovável para todos"
+  },
+  {
+    "id_desafio": "D006",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Ampliar a multifuncionalidade da paisagem para garantir a manutenção dos serviços ecossistêmicos em áreas de produção agropecuária, agroflorestal e florestal",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D007",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Ampliar a oferta de materiais genéticos de espécies agrícolas, florestais ou forrageiras para o agronegócio nacional adaptadas à mudança do clima",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D008",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Ampliar a produção, geração de produtos e subprodutos de Plantas Alimentícias Não Convencionais - Panc (ervas, hortaliças, frutíferas, entre outros) em sistemas agroecológicos, orgânicos, agroflorestais, agrícolas tradicionais e extrativistas para os biomas brasileiros",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D009",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Ampliar a provisão dos serviços ambientais de polinizadores para a agropecuária",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D010",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Ampliar as opções de espécies nativas (vegetais, animais e microrganismos) para uso em sistemas de produção em integração sustentável nos biomas brasileiros",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.2. Até 2030, aumentar em 10% a adoção de cultivares de espécies anuais e perenes, de interesse econômico, adaptados às diferentes regiões brasileiras. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D011",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Ampliar a valoração (métricas) da biodiversidade e dos valores tangíveis e intangíveis dos serviços ecossistêmicos para ampliar a multifuncionalidade da paisagem, rural e costeira, bem como a diversidade de sistemas agroalimentares no país e a Saúde Única",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D012",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Ampliar o conhecimento e a disponibilização de informações sobre a ocorrência e distribuição dos solos brasileiros e suas interpretações técnicas",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2025, ampliar em 100% o número de usuários de plataformas digitais de dados espaço-temporais integrados para o território brasileiro desenvolvidas pela Embrapa e parceiros. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D013",
+    "portfolio": "Economia Verde",
+    "desafio": "Ampliar o uso de biomassa para o desenvolvimento de materiais renováveis e/ou biodegradáveis",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D014",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Apoiar a estruturação de cadeias de valor da biodiversidade com mercado consolidado, considerando a multifuncionalidade e vocação dos diferentes territórios da agricultura familiar, de comunidades tradicionais e de povos indígenas, como estratégia de promoção da bioeconomia nos diferentes biomas brasileiros",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.3. Até 2027, disponibilizar 15 ativos e tecnologias sociais relacionados à bioeconomia, em todos os biomas. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D015",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Apoiar a estruturação de cadeias de valor e a certificação de produtos da socioagrobiodiversidade com mercado consolidado, considerando a multifuncionalidade e vocação dos diferentes territórios da agricultura familiar, de comunidades tradicionais e de povos indígenas, como estratégia de promoção da bioeconomia nos diferentes biomas brasileiros",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D016",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Aprimorar tecnologias, conhecimentos e estratégias, para as agriculturas urbana e periurbana, promovendo circuitos curtos de produção, distribuição, consumo e os mercados locais",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.2. Até 2025, aumentar em 15% a adoção de tecnologias produzidas pela Embrapa e parceiros que preservem a qualidade nutricional, a segurança ou a vida útil de alimentos. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "10. Reduzir a desigualdade dentro dos países e entre eles"
+  },
+  {
+    "id_desafio": "D017",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Aumentar a capacidade adaptativa e a resiliência dos sistemas de produção agrícola com maior impacto econômico projetado e relevância para segurança alimentar a partir de cenários de mudança climática",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D018",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Aumentar a competitividade de sistemas de produção consolidados, avançando na proposição de novas práticas, tecnologias, métricas e/ou indicadores que evidenciam a maior eficiência no uso dos insumos e/ou recursos de produção, elevando a qualidade dos produtos obtidos da atividade agropecuária",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D019",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Aumentar a eficiência do uso e do reuso da água nos sistemas agrícolas, principalmente em bacias hidrográficas com déficit hídrico acentuado ou agravado pela mudança do clima, reduzindo o impacto ambiental",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "6. Garantir disponibilidade e manejo sustentável da água e saneamento para todos"
+  },
+  {
+    "id_desafio": "D020",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Aumentar a eficiência na utilização e/ou aproveitamento de insumos agropecuários e dos recursos naturais dos sistemas produtivos",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D021",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Aumentar a resiliência de sistemas produtivos em ambientes com maiores restrições de solo e clima",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D022",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Caracterizar o nível de sustentabilidade dos sistemas agrícolas, pecuários e florestais e dos efeitos nela produzidos por indicações de ajustes no manejo desses sistemas de produção",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D023",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Conservar in situ, on farm e ex situ recursos genéticos e estabelecer estratégias e ferramentas eficientes para caracterização da diversidade genética das coleções biológicas animais, microbianas e vegetais para a tomada de decisão sobre seu uso sustentável em sistemas agropecuários e florestais",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2027, aumentar em 20% o número de ações de apoio à inovação às cadeias produtivas dos alimentos que formam a base da dieta brasileira, considerando as especificidades regionais (meta de melhoria de processo).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D024",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Construir estratégias de acesso aos materiais genéticos desenvolvidos pela Embrapa e recursos conservados em bancos genéticos governamentais para fortalecer a transição agroecológica, a diversificação dos sistemas agroalimentares localizados (Sial) e a autonomia da multiplicação desses recursos pelas organizações da agricultura familiar, povos indígenas e comunidades tradicionais",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D025",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Controlar as emissões de gases de efeito estufa (GEE), promovendo potencialmente benefícios de adaptação dos sistemas agrícolas, pecuários, agroflorestais e florestais brasileiros e suas integrações",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.2. Até 2027, estabelecer 3 iniciativas de agricultura de baixo carbono em cadeias produtivas estratégicas em um programa de PD&I (meta de produto)",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D026",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Desenvolver alimentos, insumos e/ou ingredientes à base de fontes proteicas alternativas, que atendam à demanda do mercado, a preferências e à mudança de hábito do consumidor",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D027",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Desenvolver, aperfeiçoar e integrar ferramentas, métodos, indicadores e modelos para caracterização e prognóstico do uso sustentável dos solos nas diferentes paisagens brasileiras",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D028",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Desenvolver indicadores e protocolos para contribuir com a certificação de produtos e/ou processos para manter e/ou ampliar os serviços ecossistêmicos",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D029",
+    "portfolio": "Biorrevolução",
+    "desafio": "Desenvolver kits de diagnóstico rápido e vacinas de nova geração para o manejo de pragas e doenças das principais espécies e culturas de importância para a agropecuária nacional",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D030",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Desenvolver máquinas, equipamentos e ferramentas manuais, mecânicas e automatizadas para a redução da penosidade do trabalho e aumento da produtividade da mão de obra na agricultura familiar e nos grupos sociais em situação de vulnerabilidade socioeconômica ou produtiva",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.3. Até 2027, aumentar em 30% o número de tecnologias disponíveis que contribuam para a inclusão socioprodutiva, para a transição agroecológica e para o desenvolvimento territorial. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "8. Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos"
+  },
+  {
+    "id_desafio": "D031",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Desenvolver métodos e ferramentas para monitorar a relação de causa e efeito da conversão de ecossistemas naturais e mudança do uso da terra com a produção agropecuária, a perda de biodiversidade e contabilização de emissões de GEE nos Biomas brasileiros",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D032",
+    "portfolio": "Biorrevolução",
+    "desafio": "Desenvolver plantas, animais e microrganismos como biofábricas para a produção de biofármacos, vacinas, bioplásticos, cosméticos, proteínas recombinantes, enzimas e blocos construtores",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D033",
+    "portfolio": "Biorrevolução",
+    "desafio": "Desenvolver processos nanotecnológicos para obtenção de nutrientes, medicamentos, vacinas e demais insumos adotados na alimentação e sanidade de animais",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D034",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Desenvolver sistemas e tecnologias socioprodutivos, estudos e estratégia de monitoramento da caça e da pesca artesanal, em ambientes marinhos e de interior, como subsídio à segurança e soberania alimentar e à sustentabilidade socioeconômica, cultural e ambiental",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D035",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Desenvolver soluções para manejo e gestão da água, visando a conservação de fontes superficiais e subterrâneas, em bacias hidrográficas nos agroecossistemas e ecossistemas naturais",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "6. Garantir disponibilidade e manejo sustentável da água e saneamento para todos"
+  },
+  {
+    "id_desafio": "D036",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Desenvolver tecnologias sociais, estratégias, práticas e processos inovadores de organização socioprodutiva e de inclusão digital para fortalecer o protagonismo das mulheres e dos jovens, dos agricultores familiares, comunidades extrativistas, tradicionais e de outros públicos em áreas rurais, urbanas e periurbanas com dificuldade de acesso à informação",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.1. Até 2027, 30 Hubs da Ater+Digital lançados. (meta de produto)",
+    "ods": "5. Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas"
+  },
+  {
+    "id_desafio": "D037",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Disponibilizar modelos e indicadores para fomentar sistemas de informação de previsão de oportunidades ecológicas para emergência de doenças e pragas em sistemas agroalimentares e florestais, em apoio às estratégias e políticas públicas de prevenção e controle nos diferentes biomas brasileiros",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2025, aumentar em 30% o impacto econômico gerado por tecnologias desenvolvidas pela Embrapa e parceiros para o manejo de problemas zoofitossanitários. (meta de impacto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D038",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Disponibilizar práticas e tecnologias que aumentem a eficiência da aplicação e uso de insumos agropecuários para prevenir ou mitigar impactos ambientais e aumentar a proteção da saúde pública",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2027, aumentar em 20% o número de ações de apoio à inovação às cadeias produtivas dos alimentos que formam a base da dieta brasileira, considerando as especificidades regionais (meta de melhoria de processo).",
+    "ods": "3. Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades"
+  },
+  {
+    "id_desafio": "D039",
+    "portfolio": "Economia Verde",
+    "desafio": "Diversificar a matriz de fontes lipídicas para uso industrial com agregação de valor aos coprodutos gerados",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.2. Até 2030, disponibilizar 5 novas matérias-primas renováveis para uso no contexto da bioeconomia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "9. Construir infraestrutura resiliente, promover a industrialização inclusiva e sustentável, e fomentar a inovação"
+  },
+  {
+    "id_desafio": "D040",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Diversificar matérias-primas alternativas ao milho e à soja para a composição das dietas alimentares de animais em sistemas agroecológicos, orgânicos, agroflorestais e agrícolas tradicionais",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.3. Até 2027, aumentar em 30% o número de tecnologias disponíveis que contribuam para a inclusão socioprodutiva, para a transição agroecológica e para o desenvolvimento territorial. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D041",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Estender a oferta de produtos alimentícios, considerando novos sistemas de embalagens, além de atender aos requisitos de preço, saudabilidade, sensorialidade e de conveniência exigidos pelo consumidor",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.2. Até 2025, aumentar em 15% a adoção de tecnologias produzidas pela Embrapa e parceiros que preservem a qualidade nutricional, a segurança ou a vida útil de alimentos. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D042",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Evoluir os sistemas de produção animal para melhorias nos índices zootécnicos, nas novas demandas de mercado, na segurança alimentar e sanitária, na descarbonização e no uso eficiente de recursos naturais e de capital",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D043",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Explorar a percepção, atitude e entendimento do consumidor frente aos produtos, processos e práticas que entregam características de saudabilidade, sustentabilidade, conveniência e inovação, bem como desenvolver estratégias de comunicação",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.1. Até 2030, aumentar em média, 10% o impacto econômico gerado pela adoção de tecnologias agregadoras de valor a produtos desenvolvidos pela Embrapa e parceiros (meta de impacto)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D044",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Fomentar a conservação e a restauração da vegetação nativa para a obtenção de produtos madeireiros e não madeireiros, promovendo novos usos e ampliando a bioeconomia e a Saúde Única",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.3. Até 2025, disponibilizar 5 sistemas de manejo desenvolvidos pela Embrapa e parceiros para o manejo sustentável de florestas naturais adaptados às diferentes regiões brasileiras. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D045",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Fortalecer a restauração produtiva de passivos ambientais em Áreas de Reserva Legal e de Preservação Permanente no âmbito da agricultura familiar, agricultura urbana e periurbana, comunidades indígenas e tradicionais",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": null
+  },
+  {
+    "id_desafio": "D046",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Fortalecer redes sociotécnicas com laboratórios ou nichos de inovação social e tecnológica para gestão organizacional, diversificação produtiva e acesso a mercados locais, associados à pluriatividade e à multifuncionalidade dos espaços rural, urbano, periurbano e das regiões costeiras",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D047",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Fortalecer sistemas agroalimentares diversificados, urbanos e periurbanos, com valores econômico e social agregados, para a produção de alimentos, sementes e matérias primas para artesanatos, cosméticos e fitoterápicos, como estratégia para inclusão socioprodutiva, segurança e soberania alimentar",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "11. Tornar as cidades e os assentamentos humanos inclusivos, seguros, resilientes e sustentáveis"
+  },
+  {
+    "id_desafio": "D048",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Fortalecer sistemas de monitoramento e rastreabilidade de produtos e serviços ecossistêmicos visando a agregação de renda, transparência e acesso a novos mercados com base na biodiversidade dos biomas brasileiros",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D049",
+    "portfolio": "Biorrevolução",
+    "desafio": "Gerar ativos biotecnológicos inovadores de propriedade da Embrapa, que permitam independência tecnológica no desenvolvimento e uso de métodos de engenharia genética em espécies vegetais, animais e de microrganismos de importância para a agropecuária e/ou agroindústria",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D050",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Gerar conhecimento sobre estoque e mercado dos recursos florestais brasileiros para fomentar sistemas de informação no aprimoramento da gestão e monitoramento do setor florestal e no fortalecimento de políticas públicas",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2025, ampliar em 100% o número de usuários de plataformas digitais de dados espaço-temporais integrados para o território brasileiro desenvolvidas pela Embrapa e parceiros. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D051",
+    "portfolio": "Biorrevolução",
+    "desafio": "Identificar os impactos e riscos das novas tecnologias de base nanobiotecnológica em tecidos vivos, sistemas biológicos e em alimentos para subsídio em ações regulatórias e políticas públicas",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D052",
+    "portfolio": "Biorrevolução",
+    "desafio": "Impulsionar inovações em organismos e sistemas agropecuários adaptados a ambientes extremos tendo a Agricultura Espacial como plataforma científica para soluções disruptivas aplicáveis no espaço e na Terra",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "Sem vínculo a Meta Estratégica (OE 07)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D053",
+    "portfolio": "Economia Verde",
+    "desafio": "Incrementar o desenvolvimento de bioinsumos para controle e manejo de pragas agrícolas",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D054",
+    "portfolio": "Economia Verde",
+    "desafio": "Incrementar o desenvolvimento de bioinsumos para uso ambiental",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D055",
+    "portfolio": "Economia Verde",
+    "desafio": "Incrementar o desenvolvimento de bioinsumos para uso na fertilidade do solo, na nutrição e crescimento das plantas ou na tolerância a estresses abióticos, em sistemas de produção agropecuária",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D056",
+    "portfolio": "Economia Verde",
+    "desafio": "Incrementar o desenvolvimento de bioinsumos para uso na reprodução, nutrição e saúde animal",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D057",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Intensificação sustentável dos Sistemas Integração Lavoura-Pecuária e Lavoura-Pecuária-Floresta nos biomas brasileiros",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D058",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Intensificar a Aquicultura com a adoção de práticas que aumentem a produção de forma sustentável, adaptadas às diferentes condições regionais, com foco na seleção de espécies, melhoria dos índices zootécnicos e da qualidade da água nos sistemas de criação/cultivo e otimização da alimentação nos criatórios",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D059",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Intensificar e/ou propor Sistemas Integrados de Produção Não Convencionais",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D060",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Intensificar o aprimoramento da rastreabilidade, diagnóstico, prevenção e controle de contaminantes físicos, químicos e biológicos em produtos de origem animal e vegetal e/ou mitigar impactos e riscos relevantes na saúde única e em barreiras não tarifárias",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2025, aumentar em 30% o impacto econômico gerado por tecnologias desenvolvidas pela Embrapa e parceiros para o manejo de problemas zoofitossanitários. (meta de impacto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D061",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Intensificar o aprimoramento do diagnóstico, controle, prevenção, monitoramento, vigilância e/ou erradicação de pragas e doenças que afetam negativamente cadeias produtivas agropecuária/florestal, paisagens naturais e/ou saúde pública",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2025, aumentar em 30% o impacto econômico gerado por tecnologias desenvolvidas pela Embrapa e parceiros para o manejo de problemas zoofitossanitários. (meta de impacto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D062",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Melhorar qualidade, vida útil e/ou sanidade de produtos de origem animal e vegetal, com redução de perdas e de riscos ambientais associados",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.2. Até 2025, aumentar em 15% a adoção de tecnologias produzidas pela Embrapa e parceiros que preservem a qualidade nutricional, a segurança ou a vida útil de alimentos. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D063",
+    "portfolio": "Biorrevolução",
+    "desafio": "Obter plantas, animais e microrganismos geneticamente modificados e/ou editados para maior produtividade e adaptabilidade a estresses bióticos e abióticos das espécies e culturas de importância para a agropecuária nacional",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D064",
+    "portfolio": "Biorrevolução",
+    "desafio": "Obter plantas ou microrganismos geneticamente modificados e/ou editados, visando a produção de bioenergia ou aplicação em biorrefinarias",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "7. Garantir acesso à energia barata, confiável, sustentável e renovável para todos"
+  },
+  {
+    "id_desafio": "D065",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Oferecer estratégias e tecnologias seguras e sustentáveis para mitigar impactos decorrentes de efeitos bióticos e abióticos de relevância para sistemas de produção agropecuários e florestais",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D066",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Promover a mitigação e gestão do risco climático e resiliência na agricultura brasileira, considerando inclusive os estresses bióticos e abióticos intensificados pela mudança climática",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.3. Até 2030, aumentar em 10% os benefícios econômicos derivados do Zoneamento de Risco Climático (Zarc) com apoio da Embrapa e parceiros. (meta de impacto)",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D067",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Promover a saúde e a capacidade produtiva dos solos, principalmente em áreas degradadas ou em processo de degradação considerando as diversidades regionais e a identidade territorial",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D068",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Promover conhecimentos e tecnologias para assegurar boas práticas, bem-estar animal e sustentabilidade em sistemas de produção, considerando novas tendências de consumo, regulamentações vigentes, a responsabilidade social e a mudança de hábito do consumidor",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D069",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Promover estudos colaborativos e codesenvolver estratégias para fortalecer o turismo rural, agroecológico, agroflorestal, agrícola tradicional, extrativista, etnoturismo, gastronômico e de base comunitária para o desenvolvimento local",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "8. Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos"
+  },
+  {
+    "id_desafio": "D070",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Promover métodos e sistemas de restauração de ecossistemas aliando a conservação e aproveitamento econômico e/ou provisão de serviços ecossistêmicos",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D071",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Promover o desenvolvimento de produtos alimentícios com atributos nutricionais e funcionais e/ou direcionados a públicos com necessidades de dietas específicas e/ou restritivas",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "3. Assegurar uma vida saudável e promover o bem-estar para todos, em todas as idades"
+  },
+  {
+    "id_desafio": "D072",
+    "portfolio": "Protagonismo do Consumidor",
+    "desafio": "Promover o desenvolvimento de produtos industrializados com redução de compostos químicos sintéticos como aditivos, insumos e coadjuvantes",
+    "objetivo": "03. Tendências de Consumo e Agregação de Valor",
+    "meta": "03.2. Até 2030, viabilizar a disponibilização de 5 tecnologias que promovam a agregação de valor a produtos, processos e serviços oriundos das cadeias agropecuárias e agroindustriais. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D073",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Promover o manejo integrado racional do fogo na propriedade e na paisagem rural, visando maior conservação da biodiversidade brasileira",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D074",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Promover soluções ciber físicas e digitais para apoiar a gestão das unidades agroprodutivas e agregar valor aos produtos",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.1. Até 2027, ampliar a adoção de 60 soluções tecnológicas em automação e agricultura digital, pelo setor produtivo, para as cadeias agropecuárias desenvolvidas pela Embrapa e parceiros. (meta de adoção)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D075",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Promover soluções ciber físicas e digitais para impulsionar a transformação dos processos agroprodutivos, considerando os diferentes níveis tecnológicos das unidades produtivas",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.1. Até 2027, ampliar a adoção de 60 soluções tecnológicas em automação e agricultura digital, pelo setor produtivo, para as cadeias agropecuárias desenvolvidas pela Embrapa e parceiros. (meta de adoção)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D076",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Promover soluções estratégicas em temas emergentes, promissores e portadores de futuro, a fim de viabilizar transformações no agro",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.1. Até 2027, ampliar a adoção de 60 soluções tecnológicas em automação e agricultura digital, pelo setor produtivo, para as cadeias agropecuárias desenvolvidas pela Embrapa e parceiros. (meta de adoção)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D077",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Propor alternativas tecnológicas na recuperação e/ou conversão de pastagens degradadas",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.1. Até 2030, ampliar em 5,5 milhões de hectares com tecnologias da Embrapa para integração lavoura-pecuária-floresta, recuperação de áreas degradadas e restauração de ecossistemas (meta de adoção).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D078",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Prover soluções em inteligência geográfica para apoiar o setor agroprodutivo, o desenvolvimento territorial e as políticas públicas",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2025, aumentar em 100% o número de usuários de aplicativos e sistemas digitais gerados pela Embrapa e parceiros. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D079",
+    "portfolio": "Sistemas de Produção Sustentáveis e Resilientes",
+    "desafio": "Redesenhar sistemas produtivos em novas fronteiras, bem como na agricultura urbana, mais adaptados e eficientes a determinadas condições regionais restritivas e/ou vulneráveis",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D080",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Reduzir as perdas pós-colheita causadas por danos mecânicos, patógenos, micotoxinas e pragas durante o pré-processamento e armazenamento de produtos agropecuários",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.2. Até 2025, aumentar em 15% a adoção de tecnologias produzidas pela Embrapa e parceiros que preservem a qualidade nutricional, a segurança ou a vida útil de alimentos. (meta de adoção) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D081",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Reduzir perdas na produção agropecuária e na biodiversidade provocadas por incêndios nos Biomas brasileiros",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D082",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Reduzir perdas na produção agropecuária/florestal e na pós-colheita causados por danos e contaminantes aos produtos agropecuários e viabilizar a adequada destinação dos resíduos",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.1. Até 2030, incrementar, em média, em 5% o benefício econômico gerado por práticas agropecuárias e tecnologias sustentáveis redutoras de custos desenvolvidas pela Embrapa (meta de impacto)",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D083",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Viabilizar acesso equitativo de mulheres, agricultores familiares, povos e comunidades tradicionais a soluções tecnológicas e a construção coletiva de conhecimentos para o enfrentamento da insegurança alimentar, frente aos efeitos da mudança do clima",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.3. Até 2027, implantar 5 novos Distritos Agrotecnológicos (DAT) estabelecidos pela Embrapa e parceiros (meta de melhoria de processo).",
+    "ods": "5. Alcançar a igualdade de gênero e empoderar todas as mulheres e meninas"
+  },
+  {
+    "id_desafio": "D084",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Viabilizar a conservação e o uso sustentável das espécies florestais nativas vulneráveis e/ou em riscos de extinção nos biomas brasileiros",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D085",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar a conservação on farm e in situ, melhoramento participativo vegetal e animal e estratégias de diversificação e de manejo da agrobiodiversidade em sistemas agroecológicos, orgânicos, agroflorestais, agrícolas tradicionais e extrativistas",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D086",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar a construção, o acesso, a implementação e estudos colaborativos de monitoramento e avaliação da efetividade de projetos, programas e políticas públicas, visando contribuir para o desenvolvimento rural sustentável, a inclusão socioprodutiva e a segurança e soberania alimentar",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "10. Reduzir a desigualdade dentro dos países e entre eles"
+  },
+  {
+    "id_desafio": "D087",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar a identificação ou modificação de sequências de DNA ou RNA (codificantes ou não), moléculas e rotas metabólicas de espécies dos biomas brasileiros ou outras de importância socioeconômica, visando o desenvolvimento de novos ativos sustentáveis para a agropecuária e/ou agroindústria",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D088",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar a produção em larga escala de nanoestruturas e nanocompósitos de origem biológica, visando aplicações nos diversos setores da sociedade, como agropecuária, medicina, meio ambiente, agroindústria e indústria de materiais avançados",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D089",
+    "portfolio": "Clima, recursos naturais e transformação ecológica",
+    "desafio": "Viabilizar ferramentas e metodologias que reduzam o processo de desertificação e promovam sistemas agrícolas regenerativos",
+    "objetivo": "02. Recursos Naturais e Mudança do Clima",
+    "meta": "02.4. Até 2027, aumentar em 30% o número de soluções tecnológicas disponibilizadas para o enfrentamento da pressão sobre os biomas, da mudança do clima, e para o uso sustentável dos recursos genéticos e naturais e das fontes renováveis de energia. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a perda de biodiversidade"
+  },
+  {
+    "id_desafio": "D090",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Viabilizar máquinas, equipamentos e processos para aumentar a produtividade, reduzir a penosidade do trabalho no campo e promover a inserção da agricultura na era digital",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.1. Até 2027, ampliar a adoção de 60 soluções tecnológicas em automação e agricultura digital, pelo setor produtivo, para as cadeias agropecuárias desenvolvidas pela Embrapa e parceiros. (meta de adoção)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D091",
+    "portfolio": "Economia Verde",
+    "desafio": "Viabilizar métodos e procedimentos para obtenção de insumos de origem renovável com aplicações industriais",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.1. Até 2030, disponibilizar para o setor produtivo 10 soluções tecnológicas relacionadas à bioinsumos (meta de produto).",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D092",
+    "portfolio": "Economia Verde",
+    "desafio": "Viabilizar o aproveitamento da biomassa e/ou do CO2 emitido em processos agropecuários seguindo os princípios da economia circular",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.3. Até 2027, disponibilizar 15 ativos e tecnologias sociais relacionados à bioeconomia, em todos os biomas. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D093",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar o biodesign e a engenharia de sistemas biológicos que ampliam o desempenho de funções aplicáveis ao setor agropecuário e agroindustrial",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D094",
+    "portfolio": "Economia Verde",
+    "desafio": "Viabilizar o desenvolvimento de indicadores e modelos para quantificação de impactos decorrentes de processos e produtos derivados de biomassas",
+    "objetivo": "05. Bioeconomia e Economia Circular",
+    "meta": "05.3. Até 2027, disponibilizar 15 ativos e tecnologias sociais relacionados à bioeconomia, em todos os biomas. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "12. Assegurar padrões de produção e de consumo sustentáveis"
+  },
+  {
+    "id_desafio": "D095",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar o desenvolvimento ou implementação de ferramentas para o melhoramento genético e conservação de plantas, animais e microrganismos, via seleção genômica, métodos quantitativos de seleção, algoritmos de bioinformática, fenotipagem de alto desempenho e digital, inteligência artificial, nanotecnologia e/ ou criobiologia",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D096",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar o desenvolvimento ou otimização de materiais nanoestruturados pelo reaproveitamento de resíduos e subprodutos agropecuários, agroindustriais e florestais, visando aplicação na indústria de alimentos, materiais, pós-colheita, embalagens, controle biológico e na provisão de fontes alternativas de fertilizantes na agropecuária",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D097",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar plataformas biotecnológicas eficientes na transfecção e modificação gênica de células, gametas e embriões de espécies animais de importância para a agropecuária nacional",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D098",
+    "portfolio": "Transformação Digital no Agro",
+    "desafio": "Viabilizar plataformas digitais para a gestão de dados e informações científicas, como apoio ao setor agroprodutivo, às políticas públicas, à pesquisa e à inovação no agro",
+    "objetivo": "01. Produção Sustentável e Competitividade",
+    "meta": "01.3. Até 2030, aumentar em 10% os benefícios econômicos derivados do Zoneamento de Risco Climático (Zarc) com apoio da Embrapa e parceiros. (meta de impacto)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D099",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar práticas e processos de preservação, conservação, recuperação e melhoria de sistemas de produção animal e vegetal agroecológicos, orgânicos, agroflorestais e agrícolas tradicionais no contexto de mudanças climáticas e estresses abióticos nos biomas brasileiros",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "13. Tomar medidas urgentes para combater a mudança climática e seus impactos"
+  },
+  {
+    "id_desafio": "D100",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar práticas e processos para o manejo de plantas espontâneas, produção local de fertilizantes de fontes renováveis e insumos biológicos que contribuam para a produção vegetal e animal e para o equilíbrio ecológico em sistemas agroecológicos, orgânicos, agroflorestais, agrícolas tradicionais e extrativistas",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D101",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar sistemas agroalimentares com sinais distintivos ou identidade territorial que geram renda (monetária e não monetária) e valor a populações em situação de vulnerabilidade socioeconômica ou produtiva",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "8. Promover o crescimento econômico sustentado, inclusivo e sustentável, emprego pleno e produtivo, e trabalho decente para todos"
+  },
+  {
+    "id_desafio": "D102",
+    "portfolio": "Bioeficiência na Agropecuária",
+    "desafio": "Viabilizar soluções tecnológicas e estratégias seguras, orientadas nas premissas da Saúde Única, para fortalecer as cadeias produtivas de sistemas agroalimentares que formam a base da dieta brasileira, considerando-se as especificidades regionais e nutricionais",
+    "objetivo": "04. Segurança Alimentar e Saúde Única",
+    "meta": "04.1. Até 2027, aumentar em 20% o número de ações de apoio à inovação às cadeias produtivas dos alimentos que formam a base da dieta brasileira, considerando as especificidades regionais (meta de melhoria de processo).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D103",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Viabilizar soluções tecnológicas, o manejo sustentável e o monitoramento da pesca artesanal com espécies nativas por intermédio da abordagem participativa e do conhecimento tradicional associado",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.2. Até 2030, aumentar em 10% a adoção de tecnologias da Embrapa e parceiros, que contribuam para geração de empregos no setor produtivo. (meta de adoção)",
+    "ods": "14. Conservação e uso sustentável dos oceanos, dos mares e dos recursos marinhos para o desenvolvimento sustentável"
+  },
+  {
+    "id_desafio": "D104",
+    "portfolio": "Economia da Biodiversidade",
+    "desafio": "Viabilizar soluções tecnológicas para aprimorar o manejo e o monitoramento da biodiversidade nos sistemas de produção agroextrativistas da agricultura familiar e de povos e comunidades tradicionais (PCTs)",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "06.3. Até 2027, aumentar em 30% o número de tecnologias disponíveis que contribuam para a inclusão socioprodutiva, para a transição agroecológica e para o desenvolvimento territorial. (meta de produto) [META ENCERRADA: PN 2026]",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D105",
+    "portfolio": "Biorrevolução",
+    "desafio": "Viabilizar tecnologias ou plataformas biotecnológicas para engenharia de tecidos animais com foco na produção de proteína animal em ambiente laboratorial (carne de cultura celular - cell-based meat)",
+    "objetivo": "07. Tecnologias Emergentes e Disruptivas",
+    "meta": "07.2. Até 2030, ampliar em pelo menos 5 tecnologias desenvolvidas relacionadas à biotecnologia, biossegurança e nanotecnologia (meta de produto).",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D106",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar tecnologias sociais, práticas e processos aos sistemas agroecológicos, orgânicos, agroflorestais, agrícolas tradicionais e extrativistas para os biomas brasileiros",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "2. Acabar com a fome, alcançar a segurança alimentar e melhoria da nutrição e promover a agricultura sustentável"
+  },
+  {
+    "id_desafio": "D107",
+    "portfolio": "Agroecologia e Inclusão Socioprodutiva",
+    "desafio": "Viabilizar tecnologias sociais, práticas e processos de acesso e tratamento de água, inclusive salina, para fins de abastecimento doméstico e uso em sistemas de produção da agricultura familiar, povos indígenas, comunidades tradicionais, agricultura urbana e periurbana",
+    "objetivo": "06. Inclusão Socioprodutiva e Digital",
+    "meta": "Sem vínculo a Meta Estratégica (OE 06)",
+    "ods": "6. Garantir disponibilidade e manejo sustentável da água e saneamento para todos"
+  }
+]
