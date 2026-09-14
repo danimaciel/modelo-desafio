@@ -1,16 +1,16 @@
 # Modelo Desafio
 
-Estou desenvolvendo esta aplicação para facilitar a identificação dos desafios para inovação da Embrapa mais relacionados a um projeto, publicação, tecnologia, compromisso ou solução. A ideia é enviar um arquivo e receber sugestões de desafios, acompanhadas de suas relações com portfólios, objetivos estratégicos, metas e ODS.
+Aplicação para facilitar a identificação dos desafios para inovação da Embrapa mais relacionados a um projeto, publicação, tecnologia, compromisso ou solução. A ideia é que o usuário envie um arquivo e receba sugestões de desafios, acompanhadas de suas relações com portfólios, objetivos estratégicos, metas e ODS.
 
-O projeto usa SBERT para comparar o significado dos textos. Nesta primeira versão, a interface foi construída com Streamlit. O código e a documentação ficam neste repositório para permitir ajustes, avaliação e uma futura hospedagem na infraestrutura da Embrapa.
+O projeto usa o modelo SBERT para comparar o significado semântico dos textos. Nesta primeira versão, a interface foi construída com Streamlit. O código e a documentação ficam neste repositório para permitir ajustes, avaliação e uma futura hospedagem na infraestrutura da Embrapa.
 
-Esta é uma proposta em desenvolvimento. As indicações ajudam na análise, mas precisam de revisão e não representam um enquadramento institucional oficial.
+Esta é uma proposta em desenvolvimento. 
 
 ## Como funciona
 
-- **Planilhas XLSX:** você escolhe a aba, a linha do cabeçalho e as colunas que contêm o texto. O sistema analisa cada linha e acrescenta uma coluna com o desafio sugerido e seus vínculos. Depois, você baixa a cópia da planilha com os resultados.
+- **Planilhas XLSX:** usuário escolhe a aba, a linha do cabeçalho e as colunas que contêm o texto. O sistema analisa cada linha e acrescenta uma coluna com o desafio sugerido e seus vínculos. Depois, o usuário baixa a cópia da planilha com os resultados.
 - **Projetos em PDF:** o sistema lê o texto e apresenta até três desafios relacionados, com os trechos e as páginas que apoiam cada indicação.
-- **Tabelas em PDF:** você confere a tabela extraída e escolhe as colunas de texto. O resultado é disponibilizado em XLSX, uma tabela por vez.
+- **Tabelas em PDF:** usuário confere a tabela extraída e escolhe as colunas de texto. O resultado é disponibilizado em XLSX, uma tabela por vez.
 
 Também é possível baixar um relatório JSON com os detalhes da análise. Linhas sem texto ficam sem classificação. Textos curtos, baixa similaridade ou resultados muito próximos recebem um aviso de revisão.
 
@@ -31,21 +31,9 @@ streamlit run app.py
 
 O navegador abrirá a interface local. As dependências fixam PyTorch CPU para Windows/Linux (Python 3.12); em macOS use a distribuição compatível de PyTorch e remova o sufixo `+cpu`. Não é necessário contratar API de inferência: os pesos são executados no servidor que hospeda o aplicativo. Hospedagem, memória e disponibilidade são limitações separadas.
 
-## Publicar no Streamlit Community Cloud
-
-1. Entre em https://share.streamlit.io/ com a conta que acessa este repositório.
-2. Crie um aplicativo a partir de `danimaciel/modelo-desafio`.
-3. Selecione branch `main`, arquivo principal `app.py` e Python **3.12** nas configurações avançadas.
-4. Aguarde instalação e inicialização. A primeira análise baixa o modelo.
-5. Teste com documentos públicos. Configure compartilhamento restrito aos participantes quando essa opção estiver disponível na conta.
-
-Por enquanto, o acesso é controlado pelo Streamlit; o aplicativo ainda não tem login institucional. Para esta etapa de demonstração, use documentos públicos ou exemplos sem informações internas. Os arquivos enviados pelos usuários não são adicionados ao GitHub. Senhas e outras credenciais também ficam fora do repositório.
-
-O código já está no GitHub. A publicação do aplicativo no Streamlit é uma etapa separada. Os detalhes estão no [guia de implantação e migração](docs/implantacao.md).
-
 ## Base e metodologia
 
-Para esta primeira versão, usei uma planilha com 107 desafios, associados a 9 portfólios, 7 objetivos e 25 textos distintos de metas. Em 44 registros, a meta está marcada como encerrada; um registro não informa ODS. Mantive essas informações como estavam na planilha.
+Para esta primeira versão, usou-se uma planilha com 107 desafios, associados a 9 portfólios, 7 objetivos e 25 textos distintos de metas. Em 44 registros, a meta está marcada como encerrada; um registro não informa ODS. Mantive essas informações como estavam na planilha.
 
 A base está em `data/desafios.json`. O arquivo `data/proveniencia.json` registra sua origem e uma identificação digital do arquivo original, que permite conferir qual versão foi utilizada.
 
