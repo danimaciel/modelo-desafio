@@ -28,7 +28,7 @@ def analyze_rows(items, cutoff, margin):
     progress = st.progress(0, text='Analisando linhas…')
     for count, (row_number, text) in enumerate(items, 1):
         result = model.rank(text, min_score=cutoff, min_margin=margin)[0]
-        results[row_number] = describe(result)
+        results[row_number] = result
         details.append({'linha': row_number, **result})
         progress.progress(count / len(items), text=f'Analisadas {count} de {len(items)} linhas')
     progress.empty()
@@ -152,7 +152,7 @@ def main():
                               and sheet.cell(r, c + 1).value is None for r, _ in items for c in columns)
         if missing_formula:
             st.warning('Há fórmulas selecionadas sem resultado salvo. Recalcule e salve no Excel antes de analisar.')
-        st.caption('Será acrescentada uma coluna na aba escolhida. Confira a cópia: objetos avançados do Excel podem não ser preservados.')
+        st.caption('Serão acrescentadas as colunas Desafio, Portfólio, Objetivo, Meta e ODS. Pontuação, avisos de revisão e detalhes técnicos ficam no relatório JSON e na tela de resultados. Confira a cópia: objetos avançados do Excel podem não ser preservados.')
         if st.button('Analisar linhas', type='primary', disabled=not columns or not items or missing_formula):
             if len(items) > MAX_ROWS:
                 raise ValueError('Selecione um arquivo com até 2.000 linhas de dados.')

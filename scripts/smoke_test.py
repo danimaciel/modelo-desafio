@@ -95,7 +95,7 @@ with patch('streamlit.file_uploader', return_value=table_pdf):
     click(app, 'Analisar tabela')
     output = load_xlsx(app.session_state['result']['xlsx'])
     assert output.active.max_row == 3
-    assert output.active.max_column == 3
+    assert output.active.max_column == 7
 print('UI PDF tabela: extracao, confirmacao, analise e exportacao OK')
 
 blank = BytesIO()

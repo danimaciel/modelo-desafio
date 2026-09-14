@@ -17,7 +17,7 @@ Esta é uma proposta em desenvolvimento.
 
 ## Como funciona
 
-- **Planilhas XLSX:** usuário escolhe a aba, a linha do cabeçalho e as colunas que contêm o texto. O sistema analisa cada linha e acrescenta uma coluna com o desafio sugerido e seus vínculos. Depois, o usuário baixa a cópia da planilha com os resultados.
+- **Planilhas XLSX, XLS e CSV:** usuário escolhe a aba, a linha do cabeçalho e as colunas que contêm o texto. O sistema analisa cada linha e acrescenta cinco colunas: **Desafio, Portfólio, Objetivo, Meta e ODS**, nessa ordem. A coluna Desafio reúne o código e a descrição. As colunas originais permanecem na saída; nomes já existentes recebem um sufixo nas novas colunas. Pontuação, avisos de revisão e detalhes técnicos ficam na tela e no relatório JSON. Depois, o usuário baixa a cópia da planilha com os resultados.
 - **Projetos em PDF:** o sistema lê o texto e apresenta até três desafios relacionados, com os trechos e as páginas que apoiam cada indicação.
 - **Tabelas em PDF:** usuário confere a tabela extraída e escolhe as colunas de texto. O resultado é disponibilizado em XLSX, uma tabela por vez.
 
@@ -55,7 +55,7 @@ O modelo utilizado é o `sentence-transformers/paraphrase-multilingual-MiniLM-L1
 - Sem OCR: PDFs digitalizados devem ser reconhecidos externamente e reenviados. Páginas sem texto são sinalizadas; a análise pode ser parcial.
 - Tabelas complexas, células mescladas e continuação entre páginas exigem conferência; o protótipo não une tabelas automaticamente.
 - XLSX: se as colunas escolhidas contêm fórmulas, recalcule e salve o arquivo no Excel antes de enviá-lo. O aplicativo usa os resultados salvos. Nos testes, a formatação comum, as fórmulas e as outras abas foram preservadas; recursos avançados do Excel ainda precisam de conferência na cópia gerada.
-- Uma aba ou tabela por execução. Limites: 20 MB, 150 páginas, 2.000 linhas analisadas, 100 colunas de entrada (99 para acrescentar resultado), 100 MB descompactados e 2.000 trechos por item/projeto. Divida arquivos maiores.
+- Uma aba ou tabela por execução. Limites: 20 MB, 150 páginas, 2.000 linhas analisadas, até 95 colunas originais para acrescentar as cinco colunas de resultado, 100 MB descompactados e 2.000 trechos por item/projeto. Arquivos maiores precisam ser divididos.
 - A similaridade temática não comprova contribuição, entrega, impacto nem associação oficial. Textos curtos, siglas, negações e descrições genéricas podem produzir indicações incorretas.
 - Sem garantia de disponibilidade ou capacidade para muitos acessos simultâneos no serviço gratuito.
 

@@ -67,18 +67,24 @@ class CoreTests(unittest.TestCase):
         raw = BytesIO()
         workbook.save(raw)
         self.assertEqual(row_text(sheet, 2, [1, 2]), 'Solo\nRecuperação')
-        result = export_xlsx(raw.getvalue(), 'Itens', 1, {2: '=texto', 3: 'D002'})
+        item = {'id_desafio': 'D002', 'desafio': 'Descrição', 'portfolio': '=texto', 'objetivo': 'Objetivo', 'meta': 'META ENCERRADA', 'ods': None}
+        result = export_xlsx(raw.getvalue(), 'Itens', 1, {2: item, 3: item})
         exported = load_xlsx(result)
         self.assertEqual(exported['Itens']['C2'].value, '=1+2')
         self.assertEqual(exported['Itens']['D2'].data_type, 's')
-        self.assertEqual(exported['Itens']['D3'].value, 'D002')
+        self.assertEqual(exported['Itens']['D3'].value, 'D002 — Descrição')
+        self.assertEqual([exported['Itens'].cell(1,c).value for c in range(4,9)], ['Desafio','Portfólio','Objetivo','Meta','ODS'])
+        self.assertEqual(exported['Itens']['E2'].value, '=texto')
+        self.assertEqual(exported['Itens']['E2'].data_type, 's')
+        self.assertEqual(exported['Itens']['G2'].value, 'META ENCERRADA')
+        self.assertEqual(exported['Itens']['H2'].value, 'Não informado na base')
         self.assertTrue(exported['Itens']['A2'].font.bold)
         self.assertEqual(exported['Outra']['B2'].value, 'preservado')
-        repeated = load_xlsx(export_xlsx(result, 'Itens', 1, {2: 'novo'}))
-        self.assertEqual(repeated['Itens']['E1'].value, 'Enquadramento sugerido (2)')
+        repeated = load_xlsx(export_xlsx(result, 'Itens', 1, {2: item}))
+        self.assertEqual(repeated['Itens']['I1'].value, 'Desafio (2)')
 
     def test_pdf_table_is_text(self):
-        output = load_xlsx(export_pdf_table([['Título'], ['=1+1']], {2: 'D001'}))
+        output = load_xlsx(export_pdf_table([['Título'], ['=1+1']], {2: {'status': 'Sem texto'}}))
         self.assertEqual(output.active['A2'].data_type, 's')
 
     def test_suggests_text_columns(self):

@@ -13,9 +13,9 @@ class FormatTests(unittest.TestCase):
         self.assertEqual(sheet['A2'].value, 'Tecnologia; solo')
         self.assertEqual(sheet['B2'].value, 'Descrição\ncom acento')
         self.assertEqual(sheet['C2'].value, '0012')
-        output = export_xlsx(converted, 'Dados', 1, {2: 'D001\nMeta: teste'})
+        output = export_xlsx(converted, 'Dados', 1, {2: {'id_desafio': 'D001', 'desafio': 'Teste', 'portfolio': 'P', 'objetivo': 'O', 'meta': 'Meta\nteste', 'ods': 'ODS'}})
         rows = list(csv.reader(StringIO(export_csv(output, 'Dados', ';').decode('utf-8-sig')), delimiter=';'))
-        self.assertEqual(rows[1], ['Tecnologia; solo', 'Descrição\ncom acento', '0012', 'D001\nMeta: teste'])
+        self.assertEqual(rows[1], ['Tecnologia; solo', 'Descrição\ncom acento', '0012', 'D001 — Teste', 'P', 'O', 'Meta\nteste', 'ODS'])
 
     def test_csv_bad_encoding_and_formula_text(self):
         with self.assertRaises(ValueError):

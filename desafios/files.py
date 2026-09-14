@@ -130,22 +130,31 @@ def export_xlsx(raw, sheet_name, header_row, results):
     workbook = load_xlsx(raw)
     sheet = workbook[sheet_name]
     column = sheet.max_column + 1
-    if column > MAX_COLUMNS:
-        raise ValueError('Não há espaço para a coluna de resultado no limite do protótipo.')
+    if column + 4 > MAX_COLUMNS:
+        raise ValueError('A entrada deve ter até 95 colunas para receber as cinco colunas de resultado.')
     existing = {str(c.value) for c in sheet[header_row]}
-    title = 'Enquadramento sugerido'
-    suffix = 2
-    while title in existing:
-        title = f'Enquadramento sugerido ({suffix})'
-        suffix += 1
-    sheet.cell(header_row, column, title)
-    sheet.cell(header_row, column).font = copy(sheet.cell(header_row, 1).font)
-    sheet.column_dimensions[openpyxl.utils.get_column_letter(column)].width = 65
-    for row, value in results.items():
-        cell = sheet.cell(row, column)
-        cell.value = value
-        cell.data_type = 's'
-        cell.alignment = openpyxl.styles.Alignment(wrap_text=True, vertical='top')
+    fields = [('Desafio', 'desafio', 65), ('Portfólio', 'portfolio', 35),
+              ('Objetivo', 'objetivo', 45), ('Meta', 'meta', 65), ('ODS', 'ods', 55)]
+    for offset, (label, key, width) in enumerate(fields):
+        title, suffix = label, 2
+        while title in existing:
+            title = f'{label} ({suffix})'
+            suffix += 1
+        existing.add(title)
+        col = column + offset
+        sheet.cell(header_row, col, title)
+        sheet.cell(header_row, col).font = copy(sheet.cell(header_row, 1).font)
+        sheet.column_dimensions[openpyxl.utils.get_column_letter(col)].width = width
+        for row, result in results.items():
+            if not result.get('id_desafio'):
+                value = result.get('status', 'Não analisado') if key == 'desafio' else ''
+            elif key == 'desafio':
+                value = f"{result['id_desafio']} — {result['desafio']}"
+            else:
+                value = result.get(key) or ('Não informado na base' if key == 'ods' else '')
+            cell = sheet.cell(row, col, value)
+            cell.data_type = 's'
+            cell.alignment = openpyxl.styles.Alignment(wrap_text=True, vertical='top')
     output = BytesIO()
     workbook.save(output)
     return output.getvalue()
